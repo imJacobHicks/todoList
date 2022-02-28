@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake's Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jake's Todo List</h1>
+    </header>
+
+    <form>
+        <input type="text" class="todoInput">
+        <button class="todoButton" type="submit">
+            <i class="fa-solid fa-circle-plus"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filterTodo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="todoContainer">
+        <!-- JS will create a div with class of todo and li's and add buttons to remove -->
+        <ul class="todoList"></ul>
+    </div>
+    
+<script src="app.js"></script>
+
+</body>
+</html>
